@@ -3,6 +3,7 @@
 ## 安装方法
 
 1. 安装neovim最新版本
+
    sudo apt-add-repository ppa:neovim-ppa/unstable
 
    sudo apt-get update
@@ -23,16 +24,25 @@
 
   - 安装node.js
     sudo apt update
+
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
     source ~/.bashrc
+
     nvm --version
+
     nvm ls
+
     nvm ls-remote
+
     nvm install [version.number]
+
   - 更新node.js版本，参考网址：https://phoenixnap.com/kb/update-node-js-version
 
 6. 启动neovim输入:Copilot enable激活copilot(需要使用已经拥有copilot使用权的github账号进行认证)
 
 7. 激活调试功能，为使用调试功能需要安装相关包：
+
    pip install debugpy
+
    pip install pyperclip
