@@ -58,6 +58,7 @@ mason_config.setup({
 local servers = {
   lua_ls = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
   pyright = require("lsp.config.pyright"),
+  clangd = require("lsp.config.clangd"), -- c/cpp
 }
 
 for name, config in pairs(servers) do

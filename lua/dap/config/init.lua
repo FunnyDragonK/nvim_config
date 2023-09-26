@@ -53,6 +53,7 @@ end
 local function configure_debuggers()
   --require("config.dap.lua").setup()
   require("dap.config.python").setup()
+  require("dap.config.cpp").setup()
   --require("config.dap.rust").setup()
   --require("config.dap.go").setup()
 end

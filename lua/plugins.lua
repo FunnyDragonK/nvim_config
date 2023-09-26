@@ -34,7 +34,9 @@ packer.startup({
     -- treesitter
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
     -- copilot
-    use {'github/copilot.vim', branch = 'release'} 
+    use {'github/copilot.vim', branch = 'release'}
+    --- toggleterm
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function() require("toggleterm").setup() end}
     --------------------- LSP --------------------
     --use("williamboman/nvim-lsp-installer")
     --use("neovim/nvim-lspconfig")
