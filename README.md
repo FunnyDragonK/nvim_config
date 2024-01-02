@@ -46,3 +46,52 @@
    pip install debugpy
 
    pip install pyperclip
+
+# Oh my ZSH
+
+## zsh-syntax-highlighting
+
+Clone this repository in oh-my-zsh's plugins directory:
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+Activate the plugin in ~/.zshrc:
+
+plugins=( [plugins...] zsh-syntax-highlighting)
+
+## zsh-autosuggestions
+
+#Clone this repository into $ZSH_CUSTOM/plugins (by default ~/.oh-my-zsh/custom/plugins)
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+#Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
+
+plugins=( 
+    # other plugins...
+    zsh-autosuggestions
+)
+
+## autojump
+
+#Grab a copy of autojump:
+
+git clone https://github.com/wting/autojump.git
+
+#Run the installation script and follow on screen instructions.
+
+cd autojump
+
+./install.py or ./uninstall.py
+
+## zsh-completions
+
+Clone the repository inside your oh-my-zsh repo:
+
+  git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+
+Add it to FPATH in your .zshrc by adding the following line before source "$ZSH/oh-my-zsh.sh":
+
+  fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+Note: adding it as a regular Oh My ZSH! plugin will not work properly (see #603).
+
