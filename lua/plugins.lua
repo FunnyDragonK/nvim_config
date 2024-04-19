@@ -56,6 +56,7 @@ packer.startup({
     --use "mfussenegger/nvim-dap-python"
     --use "Pocco81/DAPInstall.nvim"
     --use 'mfussenegger/nvim-dap'
+    use { "nvim-neotest/nvim-nio" }
     use {
       "mfussenegger/nvim-dap",
       opt = true,
@@ -69,6 +70,7 @@ packer.startup({
         "rcarriga/nvim-dap-ui",
         "mfussenegger/nvim-dap-python",
         "nvim-telescope/telescope-dap.nvim",
+        "nvim-neotest/nvim-nio",
         { "leoluz/nvim-dap-go", module = "dap-go" },
         { "jbyuki/one-small-step-for-vimkind", module = "osv" },
       },
